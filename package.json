@@ -2,7 +2,7 @@
   "name": "keegans-picks",
   "version": "1.0.0",
   "description": "A react component library of stuff I use regularly",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "babel lib -d build",
     "lint": "eslint lib/**; exit 0",
