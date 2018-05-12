@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import { Typeface, Layout } from '../lib';
+import { Typeface, Layout, Button } from '../lib';
 
 
 storiesOf('Typeface', module)
@@ -76,6 +76,20 @@ storiesOf('Typeface', module)
   .add('Card Style 2', () => <Layout.Row><Layout.Column styleCode={2}> Style 2</Layout.Column></Layout.Row>)
   .add('Card Style 3', () => <Layout.Row><Layout.Column styleCode={3}> Style 3</Layout.Column></Layout.Row>)
   .add('Card Style 4', () => <Layout.Row><Layout.Column styleCode={4}> Style 4</Layout.Column></Layout.Row>)
-  .add('Card Style 5', () => <Layout.Row><Layout.Column styleCode={5}> Style 5</Layout.Column></Layout.Row>)
+  .add('Card Style 5', () => <Layout.Row><Layout.Column styleCode={5}> Style 5</Layout.Column></Layout.Row>);
+
+  storiesOf('Button', module)
+  .add('Outline', () => (
+    <span>
+      <Button><span>Default Color</span></Button>
+      <Button color="red"><span>red</span></Button>
+      <Button color="orange"><span>orange</span></Button>
+      <Button color="yellow"><span>yellow</span></Button>
+      <Button color="green"><span>green</span></Button>
+      <Button color="blue"><span>blue</span></Button>
+      <Button color="purple"><span>purple</span></Button>
+      <Button color="black"><span>black</span></Button>
+    </span>
+  ));
 
 
